@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6BA148F17274A3D0027428A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BA148E17274A3D0027428A /* UIKit.framework */; };
+		D6BA149117274A3D0027428A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BA149017274A3D0027428A /* Foundation.framework */; };
+		D6BA149317274A3D0027428A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BA149217274A3D0027428A /* CoreGraphics.framework */; };
+		D6BA149917274A3D0027428A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6BA149717274A3D0027428A /* InfoPlist.strings */; };
+		D6BA149B17274A3D0027428A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA149A17274A3D0027428A /* main.m */; };
+		D6BA149F17274A3D0027428A /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA149E17274A3D0027428A /* SMAppDelegate.m */; };
+		D6BA14A117274A3D0027428A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A017274A3D0027428A /* Default.png */; };
+		D6BA14A317274A3D0027428A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A217274A3D0027428A /* Default@2x.png */; };
+		D6BA14A517274A3D0027428A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A417274A3D0027428A /* Default-568h@2x.png */; };
+		D6BA14A817274A3D0027428A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A617274A3D0027428A /* MainStoryboard_iPhone.storyboard */; };
+		D6BA14AB17274A3D0027428A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */; };
+		D6BA14AE17274A3D0027428A /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA14AD17274A3D0027428A /* SMViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6BA148B17274A3D0027428A /* SMMonthYearPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMMonthYearPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6BA148E17274A3D0027428A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6BA149017274A3D0027428A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6BA149217274A3D0027428A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6BA149617274A3D0027428A /* SMMonthYearPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMMonthYearPicker-Info.plist"; sourceTree = "<group>"; };
+		D6BA149817274A3D0027428A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6BA149A17274A3D0027428A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6BA149C17274A3D0027428A /* SMMonthYearPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMMonthYearPicker-Prefix.pch"; sourceTree = "<group>"; };
+		D6BA149D17274A3D0027428A /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		D6BA149E17274A3D0027428A /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		D6BA14A017274A3D0027428A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D6BA14A217274A3D0027428A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D6BA14A417274A3D0027428A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D6BA14A717274A3D0027428A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D6BA14AA17274A3D0027428A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		D6BA14AC17274A3D0027428A /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
+		D6BA14AD17274A3D0027428A /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6BA148817274A3D0027428A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BA148F17274A3D0027428A /* UIKit.framework in Frameworks */,
+				D6BA149117274A3D0027428A /* Foundation.framework in Frameworks */,
+				D6BA149317274A3D0027428A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6BA148217274A3D0027428A = {
+			isa = PBXGroup;
+			children = (
+				D6BA149417274A3D0027428A /* SMMonthYearPicker */,
+				D6BA148D17274A3D0027428A /* Frameworks */,
+				D6BA148C17274A3D0027428A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6BA148C17274A3D0027428A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA148B17274A3D0027428A /* SMMonthYearPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6BA148D17274A3D0027428A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA148E17274A3D0027428A /* UIKit.framework */,
+				D6BA149017274A3D0027428A /* Foundation.framework */,
+				D6BA149217274A3D0027428A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6BA149417274A3D0027428A /* SMMonthYearPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA149D17274A3D0027428A /* SMAppDelegate.h */,
+				D6BA149E17274A3D0027428A /* SMAppDelegate.m */,
+				D6BA14A617274A3D0027428A /* MainStoryboard_iPhone.storyboard */,
+				D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */,
+				D6BA14AC17274A3D0027428A /* SMViewController.h */,
+				D6BA14AD17274A3D0027428A /* SMViewController.m */,
+				D6BA149517274A3D0027428A /* Supporting Files */,
+			);
+			path = SMMonthYearPicker;
+			sourceTree = "<group>";
+		};
+		D6BA149517274A3D0027428A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA149617274A3D0027428A /* SMMonthYearPicker-Info.plist */,
+				D6BA149717274A3D0027428A /* InfoPlist.strings */,
+				D6BA149A17274A3D0027428A /* main.m */,
+				D6BA149C17274A3D0027428A /* SMMonthYearPicker-Prefix.pch */,
+				D6BA14A017274A3D0027428A /* Default.png */,
+				D6BA14A217274A3D0027428A /* Default@2x.png */,
+				D6BA14A417274A3D0027428A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6BA148A17274A3D0027428A /* SMMonthYearPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6BA14B117274A3D0027428A /* Build configuration list for PBXNativeTarget "SMMonthYearPicker" */;
+			buildPhases = (
+				D6BA148717274A3D0027428A /* Sources */,
+				D6BA148817274A3D0027428A /* Frameworks */,
+				D6BA148917274A3D0027428A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMMonthYearPicker;
+			productName = SMMonthYearPicker;
+			productReference = D6BA148B17274A3D0027428A /* SMMonthYearPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6BA148317274A3D0027428A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = StudioSutara;
+			};
+			buildConfigurationList = D6BA148617274A3D0027428A /* Build configuration list for PBXProject "SMMonthYearPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6BA148217274A3D0027428A;
+			productRefGroup = D6BA148C17274A3D0027428A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6BA148A17274A3D0027428A /* SMMonthYearPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6BA148917274A3D0027428A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BA149917274A3D0027428A /* InfoPlist.strings in Resources */,
+				D6BA14A117274A3D0027428A /* Default.png in Resources */,
+				D6BA14A317274A3D0027428A /* Default@2x.png in Resources */,
+				D6BA14A517274A3D0027428A /* Default-568h@2x.png in Resources */,
+				D6BA14A817274A3D0027428A /* MainStoryboard_iPhone.storyboard in Resources */,
+				D6BA14AB17274A3D0027428A /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6BA148717274A3D0027428A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BA149B17274A3D0027428A /* main.m in Sources */,
+				D6BA149F17274A3D0027428A /* SMAppDelegate.m in Sources */,
+				D6BA14AE17274A3D0027428A /* SMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6BA149717274A3D0027428A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6BA149817274A3D0027428A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6BA14A617274A3D0027428A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6BA14A717274A3D0027428A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6BA14AA17274A3D0027428A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6BA14AF17274A3D0027428A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6BA14B017274A3D0027428A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6BA14B217274A3D0027428A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMMonthYearPicker/SMMonthYearPicker-Prefix.pch";
+				INFOPLIST_FILE = "SMMonthYearPicker/SMMonthYearPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6BA14B317274A3D0027428A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMMonthYearPicker/SMMonthYearPicker-Prefix.pch";
+				INFOPLIST_FILE = "SMMonthYearPicker/SMMonthYearPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6BA148617274A3D0027428A /* Build configuration list for PBXProject "SMMonthYearPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BA14AF17274A3D0027428A /* Debug */,
+				D6BA14B017274A3D0027428A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6BA14B117274A3D0027428A /* Build configuration list for PBXNativeTarget "SMMonthYearPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BA14B217274A3D0027428A /* Debug */,
+				D6BA14B317274A3D0027428A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6BA148317274A3D0027428A /* Project object */;
+}
