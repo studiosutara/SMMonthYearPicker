@@ -19,6 +19,7 @@
 		D6BA14A817274A3D0027428A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A617274A3D0027428A /* MainStoryboard_iPhone.storyboard */; };
 		D6BA14AB17274A3D0027428A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */; };
 		D6BA14AE17274A3D0027428A /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA14AD17274A3D0027428A /* SMViewController.m */; };
+		D6BA14B717274A630027428A /* SMMonthYearPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BA14B617274A630027428A /* SMMonthYearPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +31,17 @@
 		D6BA149817274A3D0027428A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6BA149A17274A3D0027428A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6BA149C17274A3D0027428A /* SMMonthYearPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMMonthYearPicker-Prefix.pch"; sourceTree = "<group>"; };
-		D6BA149D17274A3D0027428A /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
-		D6BA149E17274A3D0027428A /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		D6BA149D17274A3D0027428A /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMAppDelegate.h; path = SMMonthYearPicker/SMAppDelegate.h; sourceTree = "<group>"; };
+		D6BA149E17274A3D0027428A /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SMAppDelegate.m; path = SMMonthYearPicker/SMAppDelegate.m; sourceTree = "<group>"; };
 		D6BA14A017274A3D0027428A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D6BA14A217274A3D0027428A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D6BA14A417274A3D0027428A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D6BA14A717274A3D0027428A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D6BA14AA17274A3D0027428A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		D6BA14AC17274A3D0027428A /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
-		D6BA14AD17274A3D0027428A /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+		D6BA14AC17274A3D0027428A /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMViewController.h; path = SMMonthYearPicker/SMViewController.h; sourceTree = "<group>"; };
+		D6BA14AD17274A3D0027428A /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SMViewController.m; path = SMMonthYearPicker/SMViewController.m; sourceTree = "<group>"; };
+		D6BA14B517274A630027428A /* SMMonthYearPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMonthYearPickerView.h; sourceTree = "<group>"; };
+		D6BA14B617274A630027428A /* SMMonthYearPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMonthYearPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		D6BA148217274A3D0027428A = {
 			isa = PBXGroup;
 			children = (
+				D6BA14B417274A430027428A /* SMMonthYearPickerExample */,
 				D6BA149417274A3D0027428A /* SMMonthYearPicker */,
 				D6BA148D17274A3D0027428A /* Frameworks */,
 				D6BA148C17274A3D0027428A /* Products */,
@@ -85,13 +89,8 @@
 		D6BA149417274A3D0027428A /* SMMonthYearPicker */ = {
 			isa = PBXGroup;
 			children = (
-				D6BA149D17274A3D0027428A /* SMAppDelegate.h */,
-				D6BA149E17274A3D0027428A /* SMAppDelegate.m */,
-				D6BA14A617274A3D0027428A /* MainStoryboard_iPhone.storyboard */,
-				D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */,
-				D6BA14AC17274A3D0027428A /* SMViewController.h */,
-				D6BA14AD17274A3D0027428A /* SMViewController.m */,
-				D6BA149517274A3D0027428A /* Supporting Files */,
+				D6BA14B517274A630027428A /* SMMonthYearPickerView.h */,
+				D6BA14B617274A630027428A /* SMMonthYearPickerView.m */,
 			);
 			path = SMMonthYearPicker;
 			sourceTree = "<group>";
@@ -108,6 +107,21 @@
 				D6BA14A417274A3D0027428A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = SMMonthYearPicker;
+			sourceTree = "<group>";
+		};
+		D6BA14B417274A430027428A /* SMMonthYearPickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6BA149D17274A3D0027428A /* SMAppDelegate.h */,
+				D6BA149E17274A3D0027428A /* SMAppDelegate.m */,
+				D6BA14A617274A3D0027428A /* MainStoryboard_iPhone.storyboard */,
+				D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */,
+				D6BA14AC17274A3D0027428A /* SMViewController.h */,
+				D6BA14AD17274A3D0027428A /* SMViewController.m */,
+				D6BA149517274A3D0027428A /* Supporting Files */,
+			);
+			name = SMMonthYearPickerExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,7 @@
 				D6BA149B17274A3D0027428A /* main.m in Sources */,
 				D6BA149F17274A3D0027428A /* SMAppDelegate.m in Sources */,
 				D6BA14AE17274A3D0027428A /* SMViewController.m in Sources */,
+				D6BA14B717274A630027428A /* SMMonthYearPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +216,7 @@
 				D6BA14A717274A3D0027428A /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			path = SMMonthYearPicker;
 			sourceTree = "<group>";
 		};
 		D6BA14A917274A3D0027428A /* MainStoryboard_iPad.storyboard */ = {
@@ -209,6 +225,7 @@
 				D6BA14AA17274A3D0027428A /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			path = SMMonthYearPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
